@@ -2,7 +2,7 @@
 
 ScavTrap::ScavTrap() : ClapTrap()
 {
-  std::cout << "Default ScavTrap constructor called with parameters : "
+  std::cout << "Default ScavTrap constructor called." << std::endl
             << this->_HitPoints << " Hit Points, " << this->_EnergyPoints
             << " Energy Points, " << this->_AttackDamage
             << " Attack Damage and named " << this->_Name << "." << std::endl;
@@ -11,7 +11,20 @@ ScavTrap::ScavTrap() : ClapTrap()
 ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src)
 {
   *this = src;
-  std::cout << "Copy ScravTrap constructor called" << std::endl;
+  std::cout << "Copy ScravTrap constructor called." << std::endl;
+}
+
+ScavTrap::ScavTrap(const std::string name)
+    // : ClapTrap(name), _HitPoints(10), _EnergyPoints(10), _AttackDamage(0), _Name(name)
+    : ClapTrap(name)
+{
+  this->_HitPoints = 100;
+  this->_EnergyPoints = 50;
+  this-> _AttackDamage = 20;
+  std::cout << "ScavTrap constructor with name parameter called." << std::endl
+            << this->_HitPoints << " Hit Points, " << this->_EnergyPoints
+            << " Energy Points, " << this->_AttackDamage
+            << " Attack Damage and named " << this->_Name << "." << std::endl;
 }
 
 ScavTrap::~ScavTrap()
@@ -22,6 +35,18 @@ ScavTrap::~ScavTrap()
 void ScavTrap::guardGate()
 {
   std::cout << this->_Name << " enter guardGate mode" << std::endl;
+}
+
+void ScavTrap::attack(const std::string &target)
+{
+  if (this->_HitPoints > 0 && this->_EnergyPoints > 0)
+  {
+    this->_EnergyPoints--;
+    std::cout << this->_Name << " dances with " << target << " for "
+              << this->_AttackDamage << " hit points. " << this->_Name
+              << " has now " << this->_EnergyPoints << " energy points left."
+              << std::endl;
+  }
 }
 
 ScavTrap &ScavTrap::operator=(ScavTrap const &rhs)
