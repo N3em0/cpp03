@@ -4,26 +4,25 @@ ScavTrap::ScavTrap() : ClapTrap()
 {
   this->_HitPoints = 100;
   this->_EnergyPoints = 50;
-  this-> _AttackDamage = 20;
-  std::cout << "Default ScavTrap constructor called." << std::endl
-            << this->_HitPoints << " Hit Points, " << this->_EnergyPoints
-            << " Energy Points, " << this->_AttackDamage
-            << " Attack Damage and named " << this->_Name << "." << std::endl;
+  this->_AttackDamage = 20;
+  std::cout << "Default ScavTrap constructor called. " << this->_HitPoints
+            << " Hit Points, " << this->_EnergyPoints << " Energy Points, "
+            << this->_AttackDamage << " Attack Damage and named " << this->_Name
+            << "." << std::endl;
 }
 
 ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src)
 {
   *this = src;
-  std::cout << "Copy ScravTrap constructor called." << std::endl;
+  std::cout << "[ScavTrap] Copy ScravTrap constructor called. " << std::endl;
 }
 
-ScavTrap::ScavTrap(const std::string name)
-    : ClapTrap(name)
+ScavTrap::ScavTrap(const std::string name) : ClapTrap(name)
 {
   this->_HitPoints = 100;
   this->_EnergyPoints = 50;
-  this-> _AttackDamage = 20;
-  std::cout << "ScavTrap constructor with name parameter called." << std::endl
+  this->_AttackDamage = 20;
+  std::cout << "ScavTrap constructor with name parameter called. "
             << this->_HitPoints << " Hit Points, " << this->_EnergyPoints
             << " Energy Points, " << this->_AttackDamage
             << " Attack Damage and named " << this->_Name << "." << std::endl;

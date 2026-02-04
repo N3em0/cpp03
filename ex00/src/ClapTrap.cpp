@@ -1,31 +1,34 @@
 #include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap()
-    : _HitPoints(10), _EnergyPoints(10), _AttackDamage(0), _Name("Erwann")
+    : _HitPoints(10), _EnergyPoints(10), _AttackDamage(0), _Name("ClapDefault")
 {
-  std::cout << "Default constructor called." << std::endl
-            << this->_HitPoints << " Hit Points, " << this->_EnergyPoints
-            << " Energy Points, " << this->_AttackDamage
-            << " Attack Damage and named " << this->_Name << "." << std::endl;
+  std::cout << "Default ClapTrap constructor called. " << this->_HitPoints
+            << " Hit Points, " << this->_EnergyPoints << " Energy Points, "
+            << this->_AttackDamage << " Attack Damage and named " << this->_Name
+            << "." << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap const &src)
     : _HitPoints(src._HitPoints), _EnergyPoints(src._EnergyPoints),
       _AttackDamage(src._AttackDamage), _Name(src._Name)
 {
-  std::cout << "Copy constructor called." << std::endl;
+  std::cout << "Copy ClapTrap constructor called." << std::endl;
 }
 
-ClapTrap::ClapTrap(const std::string name) 
+ClapTrap::ClapTrap(const std::string name)
     : _HitPoints(10), _EnergyPoints(10), _AttackDamage(0), _Name(name)
 {
-  std::cout << "Constructor with name parameter called." << std::endl
+  std::cout << "ClapTrap Constructor with name parameter called. "
             << this->_HitPoints << " Hit Points, " << this->_EnergyPoints
             << " Energy Points, " << this->_AttackDamage
             << " Attack Damage and named " << this->_Name << "." << std::endl;
 }
 
-ClapTrap::~ClapTrap() { std::cout << "Destructor called" << std::endl; }
+ClapTrap::~ClapTrap()
+{
+  std::cout << "ClapTrap Destructor called" << std::endl;
+}
 
 ClapTrap &ClapTrap::operator=(ClapTrap const &rhs)
 {

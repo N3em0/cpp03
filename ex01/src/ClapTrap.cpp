@@ -10,7 +10,7 @@ ClapTrap::ClapTrap()
 }
 
 ClapTrap::ClapTrap(ClapTrap const &src)
-: _HitPoints(src._HitPoints), _EnergyPoints(src._EnergyPoints),
+    : _HitPoints(src._HitPoints), _EnergyPoints(src._EnergyPoints),
       _AttackDamage(src._AttackDamage), _Name(src._Name)
 {
   std::cout << "Copy ClapTrap constructor called." << std::endl;
@@ -80,4 +80,3 @@ void ClapTrap::beRepaired(unsigned int amount)
               << " energy points left." << std::endl;
   }
 }
-

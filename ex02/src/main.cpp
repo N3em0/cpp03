@@ -1,42 +1,41 @@
 #include "ClapTrap.hpp"
-#include "ScavTrap.hpp"
 #include "FragTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main()
 {
-  ClapTrap Theo("ClapTrap");
-  ScavTrap Erwann("ScavTrap");
-  FragTrap Yves("FragTrap");
+  ClapTrap Clap("ClapTrap");
+  ScavTrap Scav("ScavTrap");
+  FragTrap Frag("FragTrap");
 
-  Theo.attack("himself");
-  Theo.takeDamage(5);
-  Theo.beRepaired(5);
-  Theo.attack("himself");
-  Theo.takeDamage(5);
-  Theo.attack("himself");
-  Theo.takeDamage(5);
-  Theo.attack("himself");
-  Theo.takeDamage(5);
-  Erwann.attack("the air");
-  Erwann.takeDamage(5);
-  Erwann.beRepaired(5);
-  Erwann.guardGate();
-  Erwann.attack("the air");
-  Erwann.takeDamage(5);
-  Erwann.attack("the air");
-  Erwann.takeDamage(5);
-  Erwann.attack("the air");
-  Erwann.takeDamage(5);
-  Yves.attack("the whole room");
-  Yves.takeDamage(5);
-  Yves.beRepaired(5);
-  Yves.highFivesGuys();
-  Yves.attack("the whole room");
-  Yves.takeDamage(5);
-  Yves.attack("the whole room");
-  Yves.takeDamage(5);
-  Yves.attack("the whole room");
-  Yves.takeDamage(5);
+  Clap.attack("himself");
+  Clap.takeDamage(5);
+  Clap.beRepaired(5);
+  Clap.attack("himself");
+  Clap.takeDamage(5);
+  Clap.attack("himself");
+  Clap.takeDamage(5);
+  Clap.attack("himself");
+  Clap.takeDamage(5);
+  Scav.attack("the air");
+  Scav.takeDamage(5);
+  Scav.beRepaired(5);
+  Scav.guardGate();
+  Scav.attack("the air");
+  Scav.takeDamage(5);
+  Scav.attack("the air");
+  Scav.takeDamage(5);
+  Scav.attack("the air");
+  Scav.takeDamage(5);
+  Frag.attack("the whole room");
+  Frag.takeDamage(5);
+  Frag.beRepaired(5);
+  Frag.highFivesGuys();
+  Frag.attack("the whole room");
+  Frag.takeDamage(5);
+  Frag.attack("the whole room");
+  Frag.takeDamage(5);
+  Frag.attack("the whole room");
+  Frag.takeDamage(5);
   return (0);
 }
-

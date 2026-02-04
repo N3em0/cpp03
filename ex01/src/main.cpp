@@ -3,28 +3,27 @@
 
 int main()
 {
-  ClapTrap Theo("Theo");
-  ScavTrap Erwann("Coucou");
+  ClapTrap Clap("Clap");
+  ScavTrap Scav("Scav");
 
-  Theo.attack("himself");
-  Theo.takeDamage(5);
-  Theo.beRepaired(5);
-  Theo.attack("himself");
-  Theo.takeDamage(5);
-  Theo.attack("himself");
-  Theo.takeDamage(5);
-  Theo.attack("himself");
-  Theo.takeDamage(5);
-  Erwann.attack("the air");
-  Erwann.takeDamage(5);
-  Erwann.beRepaired(5);
-  Erwann.guardGate();
-  Erwann.attack("the air");
-  Erwann.takeDamage(5);
-  Erwann.attack("the air");
-  Erwann.takeDamage(5);
-  Erwann.attack("the air");
-  Erwann.takeDamage(5);
+  Clap.attack("himself");
+  Clap.takeDamage(5);
+  Clap.beRepaired(5);
+  Clap.attack("himself");
+  Clap.takeDamage(5);
+  Clap.attack("himself");
+  Clap.takeDamage(5);
+  Clap.attack("himself");
+  Clap.takeDamage(5);
+  Scav.attack("the air");
+  Scav.takeDamage(5);
+  Scav.beRepaired(5);
+  Scav.guardGate();
+  Scav.attack("the air");
+  Scav.takeDamage(5);
+  Scav.attack("the air");
+  Scav.takeDamage(5);
+  Scav.attack("the air");
+  Scav.takeDamage(5);
   return (0);
 }
-
