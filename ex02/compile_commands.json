@@ -1,0 +1,78 @@
+[
+ {
+  "directory": "/home/egache/work/cpp03/ex02",
+  "arguments": [
+   "c++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-std=c++98",
+   "-MMD",
+   "-MP",
+   "-g3",
+   "-Iincludes",
+   "-c",
+   "-o",
+   ".build/main.o",
+   "src/main.cpp"
+  ],
+  "file": "src/main.cpp"
+ },
+ {
+  "directory": "/home/egache/work/cpp03/ex02",
+  "arguments": [
+   "c++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-std=c++98",
+   "-MMD",
+   "-MP",
+   "-g3",
+   "-Iincludes",
+   "-c",
+   "-o",
+   ".build/ClapTrap.o",
+   "src/ClapTrap.cpp"
+  ],
+  "file": "src/ClapTrap.cpp"
+ },
+ {
+  "directory": "/home/egache/work/cpp03/ex02",
+  "arguments": [
+   "c++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-std=c++98",
+   "-MMD",
+   "-MP",
+   "-g3",
+   "-Iincludes",
+   "-c",
+   "-o",
+   ".build/ScavTrap.o",
+   "src/ScavTrap.cpp"
+  ],
+  "file": "src/ScavTrap.cpp"
+ },
+ {
+  "directory": "/home/egache/work/cpp03/ex02",
+  "arguments": [
+   "c++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-std=c++98",
+   "-MMD",
+   "-MP",
+   "-g3",
+   "-Iincludes",
+   "-c",
+   "-o",
+   ".build/FragTrap.o",
+   "src/FragTrap.cpp"
+  ],
+  "file": "src/FragTrap.cpp"
+ }
+]

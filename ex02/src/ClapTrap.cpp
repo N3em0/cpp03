@@ -3,14 +3,14 @@
 ClapTrap::ClapTrap()
     : _HitPoints(10), _EnergyPoints(10), _AttackDamage(0), _Name("Erwann")
 {
-  std::cout << "Default ClapTrap constructor called." << std::endl
-            << this->_HitPoints << " Hit Points, " << this->_EnergyPoints
-            << " Energy Points, " << this->_AttackDamage
-            << " Attack Damage and named " << this->_Name << "." << std::endl;
+  std::cout << "Default ClapTrap constructor called." << this->_HitPoints
+            << " Hit Points, " << this->_EnergyPoints << " Energy Points, "
+            << this->_AttackDamage << " Attack Damage and named " << this->_Name
+            << "." << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap const &src)
-: _HitPoints(src._HitPoints), _EnergyPoints(src._EnergyPoints),
+    : _HitPoints(src._HitPoints), _EnergyPoints(src._EnergyPoints),
       _AttackDamage(src._AttackDamage), _Name(src._Name)
 {
   std::cout << "Copy ClapTrap constructor called." << std::endl;
@@ -19,7 +19,7 @@ ClapTrap::ClapTrap(ClapTrap const &src)
 ClapTrap::ClapTrap(const std::string name)
     : _HitPoints(10), _EnergyPoints(10), _AttackDamage(0), _Name(name)
 {
-  std::cout << "ClapTrap constructor with name parameter called." << std::endl
+  std::cout << "ClapTrap constructor with name parameter called. "
             << this->_HitPoints << " Hit Points, " << this->_EnergyPoints
             << " Energy Points, " << this->_AttackDamage
             << " Attack Damage and named " << this->_Name << "." << std::endl;
@@ -80,4 +80,3 @@ void ClapTrap::beRepaired(unsigned int amount)
               << " energy points left." << std::endl;
   }
 }
-

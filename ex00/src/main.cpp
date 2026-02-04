@@ -2,28 +2,39 @@
 
 int main()
 {
-  ClapTrap Theo("Theo");
+  ClapTrap Clap("Clap");
+  ClapTrap Anyone(Clap);
 
-  Theo.attack("himself");
-  Theo.takeDamage(5);
-  Theo.beRepaired(5);
-  Theo.attack("himself");
-  Theo.takeDamage(5);
-  Theo.attack("himself");
-  Theo.takeDamage(5);
-  Theo.attack("himself");
-  Theo.takeDamage(5);
-  
-  ClapTrap Erwann;
+  Clap.attack("himself");
+  Clap.takeDamage(5);
+  Clap.beRepaired(5);
+  Clap.attack("himself");
+  Clap.takeDamage(5);
+  Clap.attack("himself");
+  Clap.takeDamage(5);
+  Clap.attack("himself");
+  Clap.takeDamage(5);
 
-  Erwann.attack("himself");
-  Erwann.takeDamage(5);
-  Erwann.beRepaired(5);
-  Erwann.attack("himself");
-  Erwann.takeDamage(5);
-  Erwann.attack("himself");
-  Erwann.takeDamage(5);
-  Erwann.attack("himself");
-  Erwann.takeDamage(5);
+  ClapTrap Trap;
+
+  Trap.attack("no one");
+  Trap.takeDamage(5);
+  Trap.beRepaired(5);
+  Trap.attack("no one");
+  Trap.takeDamage(5);
+  Trap.attack("no one");
+  Trap.takeDamage(5);
+  Trap.attack("no one");
+  Trap.takeDamage(5);
+
+  Anyone.attack("someone");
+  Anyone.takeDamage(5);
+  Anyone.beRepaired(5);
+  Anyone.attack("someone");
+  Anyone.takeDamage(5);
+  Anyone.attack("someone");
+  Anyone.takeDamage(5);
+  Anyone.attack("someone");
+  Anyone.takeDamage(5);
   return (0);
 }
