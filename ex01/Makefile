@@ -1,4 +1,4 @@
-NAME	:= Serena	
+NAME	:= ex01	
 
 SRC_DIR := src
 BUILD_DIR	:=	.build

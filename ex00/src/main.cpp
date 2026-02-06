@@ -8,6 +8,18 @@ int main()
   Clap.attack("himself");
   Clap.takeDamage(5);
   Clap.beRepaired(5);
+  Clap.beRepaired(5);
+  Clap.beRepaired(5);
+  Clap.beRepaired(5);
+  Clap.beRepaired(5);
+  Clap.beRepaired(5);
+  Clap.beRepaired(5);
+  Clap.beRepaired(5);
+  Clap.beRepaired(5);
+  Clap.beRepaired(5);
+  Clap.beRepaired(5);
+  Clap.beRepaired(5);
+  Clap.beRepaired(5);
   Clap.attack("himself");
   Clap.takeDamage(5);
   Clap.attack("himself");

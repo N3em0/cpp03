@@ -1,4 +1,4 @@
-NAME	:= Repetitive_work	
+NAME	:= ex02	
 
 SRC_DIR := src
 BUILD_DIR	:=	.build
