@@ -13,7 +13,12 @@ ScavTrap::ScavTrap() : ClapTrap()
 
 ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src)
 {
-  *this = src;
+  if (this != &src)
+  {
+    this->_HitPoints = src._HitPoints;
+    this->_EnergyPoints = src._EnergyPoints;
+    this->_AttackDamage = src._AttackDamage;
+  }
   std::cout << "Copy ScravTrap constructor called." << std::endl;
 }
 
@@ -35,7 +40,10 @@ ScavTrap::~ScavTrap()
 
 void ScavTrap::guardGate()
 {
-  std::cout << this->_Name << " enter guardGate mode." << std::endl;
+  if (this->_HitPoints > 0 && this->_EnergyPoints > 0)
+    std::cout << this->_Name << " enter guardGate mode." << std::endl;
+  else if (this->_HitPoints > 0 && this->_EnergyPoints <= 0)
+    std::cout << this->_Name << " has no energy left ..." << std::endl;
 }
 
 void ScavTrap::attack(const std::string &target)
@@ -43,11 +51,13 @@ void ScavTrap::attack(const std::string &target)
   if (this->_HitPoints > 0 && this->_EnergyPoints > 0)
   {
     this->_EnergyPoints--;
-    std::cout << this->_Name << " dances with " << target << " for "
+    std::cout << this->_Name << " punches " << target << " for "
               << this->_AttackDamage << " hit points. " << this->_Name
               << " has now " << this->_EnergyPoints << " energy points left."
               << std::endl;
   }
+  else if (this->_HitPoints > 0 && this->_EnergyPoints <= 0)
+    std::cout << this->_Name << " has no energy left ..." << std::endl;
 }
 
 ScavTrap &ScavTrap::operator=(ScavTrap const &rhs)

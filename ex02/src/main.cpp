@@ -27,15 +27,15 @@ int main()
   Scav.takeDamage(5);
   Scav.attack("the air");
   Scav.takeDamage(5);
-  Frag.attack("the whole room");
+  Frag.attack("the target");
   Frag.takeDamage(5);
   Frag.beRepaired(5);
   Frag.highFivesGuys();
-  Frag.attack("the whole room");
+  Frag.attack("the target");
   Frag.takeDamage(5);
-  Frag.attack("the whole room");
+  Frag.attack("the target");
   Frag.takeDamage(5);
-  Frag.attack("the whole room");
+  Frag.attack("the target");
   Frag.takeDamage(5);
   return (0);
 }

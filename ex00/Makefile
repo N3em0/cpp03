@@ -1,4 +1,4 @@
-NAME	:= OPEN	
+NAME	:= ex00
 
 SRC_DIR := src
 BUILD_DIR	:=	.build
